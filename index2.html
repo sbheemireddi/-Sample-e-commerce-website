@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechBazaar - Gadget Store</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>TechBazaar</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Gadgets</a></li>
+        <li><a href="#" id="cart-btn">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h2>Latest Tech at Your Fingertips</h2>
+    <p>Shop smart, live smarter.</p>
+  </section>
+
+  <!-- Products Section -->
+  <main>
+    <section class="products">
+      <div class="product">
+        <img src="img4.jpg" alt="Gadget 1">
+        <h3>Wireless Headphones</h3>
+        <p>$45.00</p>
+        <button onclick="addToCart('Wireless Headphones', 45)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="img5.jpg" alt="Gadget 2">
+        <h3>Smartwatch</h3>
+        <p>$60.00</p>
+        <button onclick="addToCart('Smartwatch', 60)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="img6.jpg" alt="Gadget 3">
+        <h3>Portable Speaker</h3>
+        <p>$30.00</p>
+        <button onclick="addToCart('Portable Speaker', 30)">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cart Popup -->
+  <div id="cart-popup" class="cart-popup">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0</span></p>
+    <button onclick="checkout()">Checkout</button>
+    <button onclick="closeCart()">Close</button>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>
